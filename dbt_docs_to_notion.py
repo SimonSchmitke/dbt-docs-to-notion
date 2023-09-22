@@ -75,6 +75,9 @@ def main():
             for (node_name, data)
             in manifest_nodes.items() if data['resource_type'] == 'model'}
 
+  for x in models:
+    print(x)
+
   ###### create database if not exists ######
   children_query_resp = make_request(
     endpoint='blocks/',
